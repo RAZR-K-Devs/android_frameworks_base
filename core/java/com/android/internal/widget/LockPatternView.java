@@ -1079,7 +1079,7 @@ public class LockPatternView extends View {
         return new SavedState(superState,
                 mLockPatternUtils.patternToString(mPattern),
                 mPatternDisplayMode.ordinal(), mPatternSize,
-                mInputEnabled, mInStealthMode, mEnableHapticFeedback, mVisibleDots, mShowErrorPath);
+                mInputEnabled, mInStealthMode, mEnableHapticFeedback);
     }
 
     @Override
@@ -1117,7 +1117,7 @@ public class LockPatternView extends View {
          */
         private SavedState(Parcelable superState, String serializedPattern, int displayMode,
                 byte patternSize, boolean inputEnabled, boolean inStealthMode,
-                boolean tactileFeedbackEnabled, boolean visibleDots, boolean showErrorPath) {
+                boolean tactileFeedbackEnabled) {
             super(superState);
             mSerializedPattern = serializedPattern;
             mDisplayMode = displayMode;
