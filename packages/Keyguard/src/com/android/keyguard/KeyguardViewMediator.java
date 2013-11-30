@@ -1250,6 +1250,8 @@ public class KeyguardViewMediator {
             }
             // If the stream is muted, don't play the sound
             if (mAudioManager.isStreamMute(mMasterStreamType)) return;
+            //mute sound if music is playing
+            if (mAudioManager.isMusicActive ()) return;
 
             // If music is playing, don't play the sound
             if (mAudioManager.isMusicActive()) return;
