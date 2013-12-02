@@ -127,6 +127,8 @@ public class RecentsPanelView extends FrameLayout implements OnItemClickListener
 
     MemInfoReader mMemInfoReader = new MemInfoReader();
 
+    private RecentsActivity mRecentsActivity;
+
     private static Set<Integer> sLockedTasks = new HashSet<Integer>();
 
     public static interface RecentsScrollView {
