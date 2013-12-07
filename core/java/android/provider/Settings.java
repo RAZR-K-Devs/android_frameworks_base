@@ -2932,6 +2932,27 @@ public final class Settings {
                 "status_bar_battery_show_percent";
 
         /**
+         * @hide
+         */
+        public static final String START_SCREEN_STATE_SERVICE = "start_screen_state_service";
+
+        /**
+         * @hide
+         */
+        public static final String SCREEN_STATE_TWOG = "screen_state_twog";
+
+        /**
+         * @hide
+         */
+        public static final String SCREEN_STATE_GPS = "screen_state_gps";
+
+
+        /**
+         * @hide
+         */
+        public static final String SCREEN_STATE_MOBILE_DATA = "screen_state_mobile_data";
+
+        /**
          * Whether to show the clock in status bar
          * of the stock battery icon
          * 0: don't show the clock
