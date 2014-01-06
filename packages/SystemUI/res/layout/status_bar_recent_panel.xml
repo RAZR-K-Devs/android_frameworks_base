@@ -113,8 +113,6 @@
 
                 </com.android.systemui.recent.RecentsVerticalScrollView>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         <ImageView
             android:id="@+id/recents_clear"
             android:clickable="true"
@@ -123,19 +121,13 @@
             android:scaleType="center"
             android:layout_gravity="top|right"
             android:src="@drawable/ic_recents_clear" />
-=======
-=======
->>>>>>> ee8f8a9583480559d0692c4b331c0bd07fb1d362
+
                 <include layout="@layout/status_bar_no_recent_apps"
                     android:id="@+id/recents_no_apps"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:visibility="invisible" />
-<<<<<<< HEAD
->>>>>>> f7b88bf... RAM bar (1/2)
-=======
->>>>>>> ee8f8a9583480559d0692c4b331c0bd07fb1d362
 
                 <ImageView
                     android:id="@+id/recents_clear"
