@@ -220,9 +220,13 @@ public class LockSettingsService extends ILockSettings.Stub {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 8a17f76... Frameworks: Add support for variable size pattern lockscreen (Part 1/2)
+=======
+
+>>>>>>> ee8f8a9583480559d0692c4b331c0bd07fb1d362
     @Override
     public byte getLockPatternSize(int userId) {
         try {
@@ -250,9 +254,12 @@ public class LockSettingsService extends ILockSettings.Stub {
                 SYSTEM_DIRECTORY;
         String patternFile = (defaultSize ? "" : "cm_") + LOCK_PATTERN_FILE;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 8a17f76... Frameworks: Add support for variable size pattern lockscreen (Part 1/2)
+=======
+>>>>>>> ee8f8a9583480559d0692c4b331c0bd07fb1d362
         if (userId == 0) {
             // Leave it in the same place for user 0
             return dataSystemDirectory + patternFile;
@@ -312,9 +319,13 @@ public class LockSettingsService extends ILockSettings.Stub {
         final byte[] hash = mLockPatternUtils.patternToHash(
                 mLockPatternUtils.stringToPattern(pattern));
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 8a17f76... Frameworks: Add support for variable size pattern lockscreen (Part 1/2)
+=======
+
+>>>>>>> ee8f8a9583480559d0692c4b331c0bd07fb1d362
         boolean defaultSize = isDefaultSize(userId);
         writeFile(getLockPatternFilename(userId,  defaultSize), hash);
         writeFile(getLockPatternFilename(userId, !defaultSize), null);
